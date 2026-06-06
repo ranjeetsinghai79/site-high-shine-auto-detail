@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "auto-detailing",
-  name: "Apex Auto Detailing",
-  tagline: "Every Detail. Perfected.",
-  phone: "(555) 012-3456",
-  phoneHref: "tel:+15550123456",
-  email: "hello@apexautodetail.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Manteca", "Pleasanton", "Livermore"],
-  license: "CA Business #012345",
-  since: "2014",
-  google_rating: "5.0",
-  review_count: "276",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "High Shine Auto Detail",
+    tagline: "Your Car Deserves The Best",
+    phone: "(209) 345-0595",
+    phoneHref: "tel:+12093450595",
+    email: "info@highshineautodetail.com",
+    address: "1400 N 9th St, Modesto, CA 95350, USA",
+    city: "Modesto",
+    serviceAreas: ["Modesto", "Ceres", "Turlock", "Salida", "Riverbank"],
+    license: "CA Business License #123456",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "noir",
+    niche: "auto-detailing",
+  },
 
   services: [
-  { icon: "sparkles", title: "Ceramic Coating", desc: "9H hardness nano-ceramic protection. 5-year warranty. Hydrophobic, scratch-resistant, showroom shine that lasts years.", urgent: false },
-  { icon: "star", title: "Paint Correction", desc: "Multi-stage machine polishing removes swirls, scratches, and oxidation. Restore your car's true shine.", urgent: false },
-  { icon: "zap", title: "Full Detail Package", desc: "Interior + exterior deep clean. Clay bar, hand wax, leather conditioning, engine bay. The full treatment.", urgent: false },
-  { icon: "droplets", title: "Interior Detail", desc: "Deep extraction shampoo, leather cleaning and conditioning, dashboard and trim dressing. Fresh from the inside.", urgent: false },
-  { icon: "shield", title: "PPF (Paint Film)", desc: "Self-healing urethane film for bumpers, hoods, mirrors. Invisible protection against rock chips and scratches.", urgent: false },
-  { icon: "sun", title: "Window Tinting", desc: "Premium ceramic tint. Heat rejection, UV protection, privacy. Legal limits honored. Lifetime warranty.", urgent: false },
-],
+    { icon: "sparkles", title: "Ceramic Coating", desc: "Long-lasting protection and incredible gloss for your vehicle's paint.", urgent: false },
+    { icon: "wrench", title: "Paint Correction", desc: "Remove swirls, scratches, and imperfections to restore your car's finish.", urgent: false },
+    { icon: "truck", title: "Full Detail Package", desc: "Comprehensive interior and exterior cleaning for a showroom finish.", urgent: false },
+    { icon: "home", title: "Interior Detail", desc: "Deep cleaning and conditioning for a fresh and spotless cabin.", urgent: false },
+    { icon: "shield-check", title: "PPF (Paint Protection Film)", desc: "Invisible film protecting your paint from chips, scratches, and road debris.", urgent: false },
+    { icon: "scissors", title: "Window Tinting", desc: "Enhance privacy, reduce heat, and protect your interior from UV rays.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Marcus J.", location: "Tracy, CA", stars: 5, text: "Ceramic coated my BMW last year. Water beads off like nothing. Hasn't been to a car wash since. Worth every single dollar." },
-  { name: "Tyler R.", location: "Pleasanton, CA", stars: 5, text: "Paint correction on my 10-year-old Mustang made it look brand new. The swirl marks are completely gone. Insane transformation." },
-  { name: "David K.", location: "Stockton, CA", stars: 5, text: "Full interior detail after a road trip disaster. Kids had destroyed it. Looks like I just drove it off the lot. Literally perfect." },
-],
+    { name: "Sarah L.", location: "Modesto, CA", stars: 5, text: "High Shine Auto Detail did an incredible ceramic coating on my Tesla Model 3 last month. The car looks better than new, and the water just beads right off. It was worth every penny for the protection and the amazing finish!" },
+    { name: "Mark T.", location: "Ceres, CA", stars: 5, text: "Had a full detail package done on my truck before selling it. They transformed it! The interior looked brand new, and the exterior shine was fantastic. Got a great price for the truck thanks to their amazing work." },
+    { name: "Jessica R.", location: "Turlock, CA", stars: 5, text: "My car had so many swirl marks, but High Shine's paint correction service made it look flawless. The team was professional, explained everything clearly, and delivered outstanding results. Highly recommend them!" }
+  ],
 
   trustBadges: [
-  "Ceramic Pro Certified", "Paint Correction Specialists", "5-Star Google Rated",
-  "5-Year Ceramic Warranty", "Mobile Service Available", "Free Estimates"
-],
+    "IDA Certified Detailers", "XPEL Certified Installers", "5-Star Rated", "Premium Products Used", "Experienced Technicians"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1380,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 12,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1000, label: "Cars Detailed", suffix: "+", decimals: 0 },
+    { value: 14, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books detailing appointments, sends reminders, and collects post-service reviews via call, text, or WhatsApp. Zero missed bookings."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "award", title: "Certified Pros", desc: "Our technicians are highly trained and certified in the latest detailing techniques." },
+    { icon: "sparkles", title: "Showroom Finish", desc: "We use premium products and meticulous methods to achieve an unparalleled shine." },
+    { icon: "shield-check", title: "Long-Lasting Protection", desc: "From ceramic coatings to PPF, we offer solutions that protect your investment." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "We stand behind our work and ensure you're thrilled with the results." },
+    { icon: "clock", title: "Efficient Service", desc: "We work diligently to get your vehicle back to you looking pristine and on time." },
+    { icon: "dollar-sign", title: "Transparent Pricing", desc: "Clear, upfront quotes with no hidden fees, so you know exactly what to expect." }
+  ],
 
-  formServiceOptions: [
-  "Ceramic Coating",
-  "Paint Correction",
-  "Full Detail Package",
-  "Interior Detail",
-  "PPF (Paint Film)",
-  "Window Tinting"
-],
+  formServiceOptions: ["Ceramic Coating", "Paint Correction", "Full Detail Package", "Interior Detail", "PPF (Paint Protection Film)", "Window Tinting"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
